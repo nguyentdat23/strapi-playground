@@ -1,0 +1,40 @@
+{
+  "name": "strapi-playground",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "license": "MIT",
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "workspaces": [
+    "./src/plugins/strapi-plugin-ckeditor",
+    "./src/plugins/strapi-provider-minio"
+  ],
+  "scripts": {
+    "build": "strapi build",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.24.1",
+    "@strapi/plugin-i18n": "4.24.1",
+    "@strapi/plugin-users-permissions": "4.24.1",
+    "@strapi/strapi": "4.24.1",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-upload-minio-v4": "1.0.1",
+    "styled-components": "5.3.3"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "7df3fed6-b31e-426c-a8d5-c9ab8002c84a"
+  }
+}
